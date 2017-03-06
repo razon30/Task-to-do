@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>Remaining</item>
+        <item>Completed</item>
+    </string-array>
+    <string-array name="titles1">
+        <item>Set Task</item>
+        <item>Add ToDo</item>
+    </string-array>
+    <string-array name="titles2">
+        <item>ToDo</item>
+        <item>Remaining</item>
+        <item>Completed</item>
+    </string-array>
+
+</resources>

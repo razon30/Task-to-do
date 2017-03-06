@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#ff4444</color>-->
+    <!--<color name="colorPrimaryDark">#CC0000</color>-->
+    <color name="colorPrimary">#ffbb33</color>
+    <color name="colorPrimaryDark">#FF8800</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPlainText">#FFFFFF</color>
+    <color name="colorButtonText">#ffffff</color>
+    <color name="colorButtonOption">#00C851</color>
+    <color name="colorbutton">#FF8800</color>
+    <color name="guillotine_background">#182128</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+
+    <color name="drawerArrowColor">@android:color/white</color>
+    <color name="defaultwebcolor">#00ba8b</color>
+    <color name="colortext">#FFFFFF</color>
+    <color name="colorbg">#ffffff</color>
+    <color name="btcolorbg">#C5C7CC</color>
+    <color name="background_line">#444a59</color>
+
+
+    <color name="text">#26262e</color>
+    <color name="subtext">#a1a1a1</color>
+</resources>

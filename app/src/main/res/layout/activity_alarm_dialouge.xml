@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_alarm_dialouge"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    tools:context="razon.tasktodo.AlarmDialouge"
+    >
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:text="Hello World"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        android:typeface="normal"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:typeface="normal"
+        android:fontFamily="sans-serif"/>
+
+   <Button
+       android:id="@+id/ok"
+       android:layout_width="110dp"
+       android:layout_height="35dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="10dp"
+       android:background="@color/colorPrimary"
+       android:text="Done"
+       android:textSize="16dp"
+   />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task ToDo. Powered By Techfie"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:typeface="normal"
+        android:textColor="#d44848"
+        android:fontFamily="sans-serif"/>
+
+</LinearLayout>

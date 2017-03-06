@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_marginTop="56dp"
+                android:id="@+id/pic1"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:padding="16dp"
+            >
+
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pic1"
+                    android:scaleType="centerCrop"
+                />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/pic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/linear1"
+            >
+                <ImageView
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rect_red"
+                    android:gravity="center"
+
+
+                />
+
+
+                <techfie.razon.tasktodo.MyTextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WHO WE ARE"
+                    android:textColor="@color/text"
+                    android:textSize="19sp"
+                    android:gravity="center"
+
+                />
+
+                <techfie.razon.tasktodo.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/subtext"
+                    android:text="Techfie is a technology wise creative company in the field of Website Designing, Website Development and Mobile Application Development. Our Web and Mobile Development professionals are committed to provide work which pushes the limits of creativity and at a quick turnaround time with utmost quality."
+                    android:lineSpacingExtra="4dp"
+                    android:textSize="14.5sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                />
+
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:padding="16dp"
+                android:layout_below="@+id/linear1"
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pic2"
+                    android:scaleType="centerCrop"
+                />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_below="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+            >
+                <ImageView
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/circle"
+                    android:gravity="center"
+
+
+                />
+
+
+                <techfie.razon.tasktodo.MyTextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WHAT WE DO"
+                    android:textColor="@color/text"
+                    android:textSize="19sp"
+                    android:gravity="center"
+
+                />
+
+                <techfie.razon.tasktodo.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/subtext"
+                    android:text="With mission to develop the clients performance in their business, our company is sincerely working harder for showing profit oriented results to their clients ."
+                    android:lineSpacingExtra="4dp"
+                    android:textSize="14.5sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/linear3"
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                >
+
+                <include
+                    layout="@layout/layout_previous_task"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/linear4"
+                android:layout_gravity="bottom"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:background="#2b2e37"
+                android:layout_marginBottom="80dp"
+            >
+
+                <techfie.razon.tasktodo.MyTextView
+                    android:id="@+id/anotherHome"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:background="@drawable/rect"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:padding="11dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                />
+
+                <techfie.razon.tasktodo.MyTextView
+                    android:id="@+id/anotherCOntact"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT"
+                    android:background="@drawable/rect1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:padding="11dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+    ></include>
+</RelativeLayout>

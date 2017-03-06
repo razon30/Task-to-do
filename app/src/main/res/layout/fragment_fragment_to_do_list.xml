@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff252e39"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="#182128"
+        app:cardElevation="4dp">
+
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#182128"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_edit"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:minHeight="40dp"
+                    android:layout_width="286dp"
+                    android:background="#182128"
+                    android:textColorHint="#808080"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:hint="Enter Task"/>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#40bce2">
+
+            </View>
+
+            <TextView
+                android:id="@+id/input_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:minWidth="100dp"
+                android:text="Add"
+                android:textColor="#00C851"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <!--<LinearLayout-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#23292d"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/record_task"-->
+            <!--android:layout_width="26dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/record" />-->
+        <!--<ImageView-->
+            <!--android:id="@+id/alarm"-->
+            <!--android:layout_width="26dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/alarm"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#182128"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <com.cleveroad.pulltorefresh.firework.FireworkyPullToRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ptr_background="@drawable/background">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        </com.cleveroad.pulltorefresh.firework.FireworkyPullToRefreshLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

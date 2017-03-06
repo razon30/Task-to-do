@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeTask" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#182128</item>
+        <item name="colorPrimaryDark">#182128</item>
+        <item name="colorAccent">#182128</item>
+    </style>
+
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHighlight">#FFFFFF</item>
+        <item name="android:textColorLink">@color/colorAccent</item>
+
+        <item name="android:textColorHint">#949292</item>
+        <item name="android:textSize">18sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorButtonOption</item>
+        <item name="colorControlActivated">#182128</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorButtonOption</item>
+        <item name="colorControlActivated">#018938</item>
+    </style>
+
+    <style name="aalrmStyle" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:textColor">@color/defaultwebcolor</item>
+
+    </style>
+
+</resources>

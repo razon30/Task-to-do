@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="#ff252e39"
+              android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/activity_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="#182128"
+            android:layout_marginTop="70dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="#182128"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:gravity="center_vertical"
+                    android:id="@+id/edtNote"
+                    android:layout_width="313dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter A short Note"
+                    android:textColorHint="#808080"
+                    android:theme="@style/TextLabel"
+                    android:minHeight="40dp"
+                    android:textColor="@color/colorPlainText"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/record_task"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/record"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Set Notification After"
+                android:textSize="18sp"
+                android:textColor="@color/colorPlainText"
+            />
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center"
+            >
+
+
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/fivemnt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPlainText"
+                    android:background="@drawable/circula_one"
+                    android:text="5 mnt"
+                    app:rd_enable="true"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/tenmnt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circula_two"
+                    android:text="10 mnt"
+                    android:textColor="@color/colorPlainText"
+                    app:rd_enable="true"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+                <com.rey.material.widget.Button
+                    android:id="@+id/fifteenmnt"
+                    android:layout_width="60dp"
+                    android:textColor="@color/colorPlainText"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circula_three"
+                    android:text="15 mnt"
+                    app:rd_enable="true"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+                <com.rey.material.widget.Button
+                    android:id="@+id/twentymnt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circula_four"
+                    android:text="20 mnt"
+                    app:rd_enable="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPlainText"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/twintyfivemnt"
+                    android:layout_width="60dp"
+                    android:textColor="@color/colorPlainText"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circula_five"
+                    android:text="25 mnt"
+                    app:rd_enable="true"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                >
+
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/thirtymnt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPlainText"
+                    android:background="@drawable/circula_one"
+                    android:text="30 mnt"
+                    app:rd_enable="true"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+
+                />
+                <com.rey.material.widget.Button
+                    android:id="@+id/thirtyfive"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circula_two"
+                    android:text="35 mnt"
+                    app:rd_enable="true"
+                    android:textColor="@color/colorPlainText"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+                <com.rey.material.widget.Button
+                    android:id="@+id/fortymnt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circula_three"
+                    android:text="40 mnt"
+                    android:textColor="@color/colorPlainText"
+                    app:rd_enable="true"
+                    android:layout_marginRight="10dp"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+                <com.rey.material.widget.Button
+                    android:id="@+id/fortyFiveMnt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circula_four"
+                    android:text="45 mnt"
+                    android:textColor="@color/colorPlainText"
+                    app:rd_enable="true"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/fiftyMnt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/colorPlainText"
+                    android:background="@drawable/circula_five"
+                    android:text="50 mnt"
+                    app:rd_enable="true"
+                    app:rd_maskType="oval"
+                    app:rd_rippleColor="@color/colorbutton"
+                    app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+
+            </LinearLayout>
+            <!--<LinearLayout android:layout_width="match_parent"-->
+                          <!--android:layout_height="wrap_content"-->
+                          <!--android:layout_marginTop="10dp"-->
+                          <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+
+                <!--<com.rey.material.widget.Button-->
+                    <!--android:id="@+id/fiftyFiveMnt"-->
+                    <!--android:textColor="@color/colorPlainText"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@color/colorButtonOption"-->
+                    <!--android:text="55 mnt"-->
+                    <!--app:rd_enable="true"-->
+                    <!--app:rd_maskType="oval"-->
+                    <!--app:rd_rippleColor="@color/colorbutton"-->
+                    <!--app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>-->
+                <!--<com.rey.material.widget.Button-->
+                    <!--android:id="@+id/sixtyMnt"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/colorPlainText"-->
+                    <!--android:background="@color/colorButtonOption"-->
+                    <!--android:text="1 Hr"-->
+                    <!--app:rd_enable="true"-->
+                    <!--app:rd_maskType="oval"-->
+                    <!--app:rd_rippleColor="@color/colorbutton"-->
+                    <!--app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>-->
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Or Set By Yourself"
+            android:textSize="18sp"
+            android:textColor="@color/colorPlainText"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+        >
+
+            <com.rey.material.widget.Button
+                android:id="@+id/timeDate"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPlainText"
+                android:background="@color/colorButtonOption"
+                android:text="Time Date"
+                app:rd_enable="true"
+                app:rd_maskType="oval"
+                app:rd_rippleColor="@color/colorbutton"
+                app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="OR"
+                android:textColor="@color/colorPlainText"
+                android:textSize="18sp"
+            />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/timeAfter"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPlainText"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/colorButtonOption"
+                android:text="time After"
+                app:rd_enable="true"
+                app:rd_maskType="oval"
+                app:rd_rippleColor="@color/colorbutton"
+                app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView.Light"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

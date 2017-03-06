@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="techfie.razon.tasktodo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".SampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".MyAlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".MyReceiver" />
+        <receiver android:name=".ToDoReceiver" />
+        <receiver android:name=".PopUpReceiver" />
+
+        <activity
+            android:name=".AlarmDialouge"
+            android:theme="@android:style/Widget.DeviceDefault.Light.ActionBar" />
+        <activity
+            android:name=".TaskList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTask" />
+        <activity
+            android:name=".TaskActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTask"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutTechfie"
+            android:screenOrientation="portrait"
+            android:theme="@style/aalrmStyle" />
+        <activity
+            android:name=".ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskListForground"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver android:name=".TaskListToDo">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/task_list_to_do_info" />
+        </receiver>
+    </application>
+
+</manifest>
